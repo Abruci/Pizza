@@ -1,0 +1,173 @@
+/***** Rozlišení 1165px a menší *****/
+@media only screen and (max-width: 1165px){
+
+    /***** PHOTO GALERY *****/
+    .photo-segment {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .col.span-1-of-3.one-reference {
+        width: 48.5%;
+        margin-left: 10px;
+    }
+
+    /***** REFERENCE *****/
+    /***** Vybere třetí element co má třídu one-reference a nechá ho zmizet *****/
+    .one-reference:nth-child(3) {
+        display: none;
+    }
+
+    /***** ABOUT US *****/
+    .pizza-example .span-1-of-2 {
+        width: 48.3%;
+    }
+
+    .pizza-example img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/***** Rozlišení 882px a menší *****/
+@media only screen and (max-width: 882px){
+
+    /***** OUR PIZZA *****/
+    .pizza-info .span-1-of-2 {
+        width: 96%;
+    }
+
+    .pizza-info img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .text-pizza p {
+        padding-top: 13px;
+    }
+}
+
+/***** Rozlišení 800px a menší *****/
+@media only screen and (max-width: 800px){
+
+    /***** HEADER *****/
+    .header-text {
+        width: 100%;
+        transform: translate(0%,0%);
+        top: 40%;
+        left: 0%;
+    }
+
+    .header-text h1 {
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 2%;
+        margin-top: 5%;
+    }
+
+    .btn-empty {
+        margin-left: 2%;
+    }
+
+    /***** MOBILE NAVIGATION *****/
+
+    nav ul li {
+        display: block;
+    }
+
+    .mobile-nav-back {
+        height: 210px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        border-bottom: 1px solid #fff;
+        display: none;
+        z-index: 100;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    }
+
+    nav ul {
+        display: none;
+        z-index: 200;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+}
+
+/***** Rozlišení 779px a menší *****/
+@media only screen and (max-width: 779px){
+
+    /***** OUR PIZZA *****/
+    .text-pizza p {
+        padding-top: 3px;
+    }
+}
+
+/***** Rozlišení 750px a menší *****/
+@media only screen and (max-width: 750px){
+
+    /***** PHOTO GALERY *****/
+    .photo-segment {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .photo-segment .col {
+        margin-left: 0;
+    }
+    
+    .photo-segment li{
+        width: 100%;
+    }
+
+    /***** ABOUT US *****/
+    .pizza-example .span-1-of-2 {
+        width: 96%;
+    }
+
+    .pizza-example .col {
+        margin-left: 0;
+    }
+
+    .pizza-example img {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/***** Rozlišení 685px a menší *****/
+@media only screen and (max-width: 685px){
+
+    /***** REFERENCE *****/
+    .col.span-1-of-3.one-reference {
+        width: 97%;
+        margin-left: 10px;
+    }
+
+    .one-reference:nth-child(3) {
+        display: block;
+    }
+
+        /***** PHOTO GALERY *****/
+    .photo-name {
+        float: right;
+        margin-right: 20px;
+    }
+}

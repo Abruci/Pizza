@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** REUSABLE *****/
+.row {
+    width: 1140px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/***** HEADER *****/
+header {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/pizza.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-background {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: rgba(0,0,0,0.9);
+    z-index: 50;
+    border-bottom: 1px solid #fff;
+}
+
+header p {
+    color:white;
+}
+
+#logo img {
+    width: 80px;
+    position: absolute;
+    top: 0.5%;
+    z-index: 50;
+}
+
+nav ul {
+    float: right;
+    margin-top: 35px;
+    position: fixed;
+    margin-left: 32%;
+    z-index: 100; /* Posouvá o vrstvu výš - lze tak dacílit aby to žádný prvek nezakrýval (posouvá se to po stovkách) */
+}
+
+nav ul li {
+    display: inline-block;
+    color:#fff;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color:#fff;
+    text-decoration: none;
+    font-size: 30px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 2px solid #007dad;
+    transition: border-bottom 0.5s;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3.0px;
+    word-spacing: 3.5px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    color: #007dad;
+    background: #fff;
+    border:2px solid #fff;
+    font-weight: bold;
+}
+
+.btn-full:active{
+    transform: rotate(10deg);
+}
+
+.btn-empty:hover{
+    border:2px solid #fff;
+    font-weight: bold;
+    transition: border 0.5s;
+}
+
+.btn-empty:active{
+    transform: rotate(10deg);
+}
+
+.btn-full {
+    background: #007dad;
+    border: 2px solid #007dad;
+}
+
+.btn-empty {
+    margin-left: 5px;
+    border: 2px solid #007dad;
+}
+
+/***** MOBILE NAVIGATION *****/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 0.8%;
+    display: none;
+}
+
+/***** ABOUT US *****/
+.heading-main h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #007dad;
+    margin: 10px auto;
+}
+
+.pizza-example img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 6px 10px #000;
+}
+
+.pizza-example {
+    max-width: 100%;
+}
+
+/***** OUR PIZZA *****/
+.pizza-info img {
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 4px 6px 10px #000;
+}
+
+.text-pizza {
+    margin-bottom: 20px;
+}
+
+.text-pizza div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    padding: 13px;
+    float: left;
+}
+
+.text-pizza p {
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+/***** REFERENCE *****/
+.reference {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/Pizza/images/pizza.jpg);
+    background-attachment: fixed;
+}
+
+.reference h2 {
+    color: #fff;
+    padding-top: 40px;
+}
+
+.reference h2:after {
+    border-bottom: 2px solid #fff;
+}
+
+.one-reference {
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-reference p {
+    font-style: italic;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.photo-name img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+}
+
+.photo-name p {
+    padding: 15px;
+    margin-left: 60px;
+    font-style: normal;
+}
+
+/***** PHOTO GALERY *****/
+.photo-segment li{
+    list-style-type: none;
+    overflow: hidden;
+    height: 300px;
+}
+
+.photo-segment img {
+    width: 100%;
+    height: 300px;
+}
+
+.photo-segment img:hover {
+    transform: scale(1.1);
+}
+
+/***** CONTACT FORM *****/
+
+@media only screen and (max-width: 600px) {
+    .contact-form {
+        width: 100%; /* Zajistí, aby formulář zabíral 100% šířky na malých zařízeních */
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 95%; /* Zajistí, aby vstupní pole a textová oblast zabírala téměř celou šířku rodiče */
+        margin: 10px auto; /* Zarovná prvky na střed */
+    }
+
+    .contact-form h2 {
+        font-size: 24px; /* Zmenší velikost nadpisu */
+    }
+
+    input[type="submit"] {
+        width: 95%; /* Zajistí, aby tlačítko odeslání zabíralo téměř celou šířku rodiče */
+        margin: 10px auto; /* Zarovná tlačítko na střed */
+    }
+}
+
+
+.bg-form {
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.1)), url(/Pizza/images/pizza.jpg);
+}
+
+.contact-form {
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: calc(100% - 100px);
+    max-width: 700px; /* Omezí šířku na desktopu */
+    margin: 10px 0;
+    padding: 10px;
+    border: 3px solid #007dad;
+    border-radius: 10px
+}
+
+.contact-form textarea {
+    width: calc(100% - 100px); /* Upraví šířku, aby odpovídala šířce inputů */
+    max-width: 700px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 3px solid #007dad;
+    border-radius: 10px;
+    height: 150px; /* Můžeš nastavit stejnou výšku jako inputy, nebo ji upravit */
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"] {
+    background: #007dad;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #015f85;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.bg-form h2 {
+    color: #fff;
+    padding-top: 10px;
+}
+
+/***** FOOTER *****/
+.footer-page {
+    background: #007dad;
+    color: #fff;
+}
+
+.social p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social p a:hover,
+.social p a:active {
+    color: #000000;
+}
+
+.social p a:linked,
+.social p a:visited {
+    color: #000000;
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social p {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** STOP FLOATING - CLEARFIX *****/
+.clearfix {zoom:1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

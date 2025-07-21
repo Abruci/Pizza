@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Pizza/images/favicon-pizza.png" type="image/png">
+    <link rel="stylesheet" href="../Pizza/css/style.css">
+    <link rel="stylesheet" href="../Pizza/css/queries.css">
+    <link rel="stylesheet" href="../Pizza/css/grid.css">
+    <link rel="stylesheet" href="../Pizza/css/lightbox.min.css">
+    <script src="../Pizza/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Pizza/js/script.js"></script>
+
+    <title>Pizza</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="nav-background">
+            <!-- Pozadí v menu -->
+        </div>
+
+        <div class="nav-bar row">
+            <div id="logo">
+                <img src="../Pizza/images/pizza-logo.png" alt="Pizza logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#" class="jq--scroll-our-pizza">O nás</a></li>
+                    <li><a href="#" class="jq--scroll-pizza">Pizza</a></li>
+                    <li><a href="#" class="jq--scroll-reference">Reference</a></li>
+                    <li><a href="#" class="jq--scroll-galery">Galerie</a></li>
+                    <li><a href="#" class="jq--scroll-contact">Kontakt</a></li>
+                </ul>
+
+                <div class="mobile-nav-back"></div>
+                <a class="mobile-nav-icon jq--nav-icon">
+                    <img class="jq--img-hamburger" src="../Pizza/images/menuHamburger.png" alt="">
+                </a>
+                
+            </nav>
+        </div>
+
+        <div class="header-text">
+            <h1>Roztančíme vaše chuťové buňky</h1>
+            <a href="#" class="btn btn-full jq--scroll-button-first">Poslat dotaz</a>
+            <a href="#" class="btn btn-empty jq--scroll-button-second">Naši zákazníci</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us row jq--our-pizza">
+           <div class="heading-main">
+                <h2>O nás</h2>
+           </div>
+
+           <div class="pizza-example">
+                <div class="col span-1-of-2">
+                    <img src="../Pizza/images/pizza1.jpg" alt="Pizza">
+                </div>
+                <div class="col span-1-of-2">
+                    <img src="../Pizza/images/pizza2.jpg" alt="Pizza">
+                </div>
+           </div>
+        </section>
+
+        <section class="our-pizza row jq--pizza">
+            <div class="heading-main">
+                <h2>O naší pizze</h2>
+           </div>
+
+           <div class="pizza-info">
+                <div class="col span-1-of-2">
+                    <img src="../Pizza/images/pizza3.jpg" alt="Pizza">
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="text-pizza clearfix">
+                        <div>1</div>
+                        <p>Naše pizzy jsou dělané z prvotřídních surovin. A připravuje je náš zkušený kuchař.</p>
+                    </div>
+                    <div class="text-pizza clearfix">
+                        <div>2</div>
+                        <p>Naše pizzy jsou dělané z prvotřídních surovin. A připravuje je náš zkušený kuchař.</p>
+                    </div>
+                    <div class="text-pizza clearfix">
+                        <div>3</div>
+                        <p>Naše pizzy jsou dělané z prvotřídních surovin. A připravuje je náš zkušený kuchař.</p>
+                    </div>
+                    <div class="text-pizza clearfix">
+                        <div>4</div>
+                        <p>Naše pizzy jsou dělané z prvotřídních surovin. A připravuje je náš zkušený kuchař.</p>
+                    </div>
+    
+                </div>
+           </div>
+        </section>
+
+        <section class="reference jq--reference">
+            <div class="heading-main">
+                <h2>Co o nás řekli naši zákazníci</h2>
+           </div>
+
+           <div class="customer-reference row">
+            <div class="col span-1-of-3 one-reference">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae libero quae, quam velit ratione, voluptates iusto, animi laborum suscipit obcaecati commodi necessitatibus. Hic, iure aliquid quisquam enim assumenda incidunt consequuntur!</p>
+                <div class="photo-name">
+                    <img src="../Pizza/images/woman.jpg" alt="Woman" class="clearfix">
+                    <p>Kiki Lehman</p>
+                </div>
+            </div>
+            <div class="col span-1-of-3 one-reference">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae libero quae, quam velit ratione, voluptates iusto, animi laborum suscipit obcaecati commodi necessitatibus. Hic, iure aliquid quisquam enim assumenda incidunt consequuntur!</p>
+                <div class="photo-name">
+                    <img src="../Pizza/images/man1.jpg" alt="Man" class="clearfix">
+                    <p>Pavel Sedláček</p>
+                </div>
+            </div>
+            <div class="col span-1-of-3 one-reference">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae libero quae, quam velit ratione, voluptates iusto, animi laborum suscipit obcaecati commodi necessitatibus. Hic, iure aliquid quisquam enim assumenda incidunt consequuntur!</p>
+                <div class="photo-name">
+                    <img src="../Pizza/images/man2.jpg" alt="Man" class="clearfix">
+                    <p>Patrik Bednář</p>
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <section class="photo-galery jq--galery">
+            <div class="heading-main">
+                <h2>Galerie</h2>
+           </div>
+
+           <div class="photos row">
+                <ul class="photo-segment">
+                    <li class="col span-1-of-2"><a href="images/pizza1.jpg" data-lightbox="mygalery" data-title="Pizza se olivami"><img src="../Pizza/images/pizza1.jpg" alt="Pizza"></a></li>
+                    <li class="col span-1-of-2"><a href="images/pizza2.jpg" data-lightbox="mygalery" data-title="Pizza s brokolicí"><img src="../Pizza/images/pizza2.jpg" alt="Pizza"></a></li>
+                </ul>
+                <ul class="photo-segment">
+                    <li class="col span-1-of-2"><a href="images/pizza3.jpg" data-lightbox="mygalery" data-title="Pizza"><img src="../Pizza/images/pizza3.jpg" alt="Pizza"></a></li>
+                    <li class="col span-1-of-2"><a href="images/pizza4.jpg" data-lightbox="mygalery" data-title="Pizza s paprikou a sálámem"><img src="../Pizza/images/pizza4.jpg" alt="Pizza"></a></li>
+                </ul>
+                <ul class="photo-segment">
+                    <li class="col span-1-of-2"><a href="images/pizza6.jpg" data-lightbox="mygalery" data-title="Pizza se sýrem s salámem"><img src="../Pizza/images/pizza6.jpg" alt="Pizza"></a></li>
+                    <li class="col span-1-of-2"><a href="images/pizza5.jpg" data-lightbox="mygalery" data-title="Pizza se smetanou a sýrem"><img src="../Pizza/images/pizza5.jpg" alt="Pizza"></a></li>
+                </ul>
+           </div>
+        </section>
+
+        <section class="bg-form jq--contact">
+            <div class="heading-main">
+                <h2>Zeptejte se nás na cokoli</h2>
+           </div>
+
+           <form action="" class="contact-form row">
+                <input type="text" placeholder="Jméno"><br>
+                <input type="text" placeholder="Příjmení"><br>
+                <input type="mail" placeholder="Email"><br>
+                <textarea name="" placeholder="Vaše zpráva" id=""></textarea><br>
+                <input type="submit" value="Odeslat">
+           </form>
+        </section>
+    </main>
+
+    <footer class="footer-page">
+        <div class="row">
+            <div class="social">
+                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></>
+                <p><a href="https://cz.linkedin.com/" target="_blank">LinkedIn</a></p>
+            </div>
+        
+            <div class="footer-text">
+                Copywrite &copy; 2024 Pizza Company PS. Všechna práva vyhrazena.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
